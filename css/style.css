@@ -8,11 +8,46 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
+ /* Modo claro */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #3a3a3a;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #3a3a3a;
+    color: #f5f5f5;
+}
+
 header {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+
+.theme-toggle-container {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+
+.theme-toggle {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #ddd;
 }
 
 main {
